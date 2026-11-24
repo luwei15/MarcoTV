@@ -36,8 +36,3 @@ android:foreground="?android:attr/selectableItemBackground"
 recyclerView.setOnTouchListener { _, _ -> true }
 ```
 请将其直接**注释掉或删除**。
-
----
-完成以上修改后，直接提交（Commit）到你的 GitHub 仓库中。
-自带的 GitHub Actions 会根据 `.github/workflows/build-apk.yml` 自动运行打包。
-几分钟后，在仓库的 Actions 选项卡中下载最终的 APK 即可！
