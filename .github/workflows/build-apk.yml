@@ -20,7 +20,7 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-          cache: gradle
+          # 移除了 cache: gradle，避免因为找不到特定的 gradle-wrapper.properties 文件而导致任务直接中断
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
